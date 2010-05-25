@@ -13,5 +13,8 @@ function set_notifications($event, $object_type, $object){
 register_elgg_event_handler('join',
 			    'group',
 			    'set_notifications');
+register_elgg_event_handler('added',
+			    'group',
+			    'set_notifications');
 
 ?>
